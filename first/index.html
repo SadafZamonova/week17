@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Введите Ф.И.О.<input input type="text" class="all"></p>
+    <button>сохранить</button>
+    <p>Фамилия<input class="Fam"></p>
+    <p>Имя<input class="name"></p>
+    <p>Отчество<input class="Otch"></p>
+
+
+
+    <script>
+        let clickButton = document.querySelector("button");
+
+
+        function onClick() {
+            let fromInput = document.querySelector(".all").value;
+            alert(fromInput);
+            toLowerCase();
+            let changeInput = fromInput.replase(/\s+/g, " ").trim();
+            let array = changeInput.split(" ");
+
+            let array1 = array[0];
+            array = array1[0].toUpperCase() + array1.slice(1);
+            let array2 = array[1];
+            array2 = array2[0].toUpperCase() + array2.slice(1);
+            let array3 = array[2];
+            array3 = array3[0].toUpperCase() + array3.slice(1);
+
+            concole.log(array[0]);
+            concole.log(array[1]);
+            concole.log(array[2]);
+
+            let Fam = document.querySelector(".Fam");
+            Fam.value = array1;
+            let name = document.querySelector(".name");
+            name.value = array2;
+            let Otch = document.querySelector(".Otch");
+            Otch.value = array3;
+        }
+
+        clickButton.addEventListener("click", onClick);
+    </script>
+</body>
+
+</html>
