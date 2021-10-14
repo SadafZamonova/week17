@@ -3,8 +3,9 @@ let clickButton = document.querySelector("button");
 
 function onClick() {
     let fromInput = document.querySelector(".all").value;
-   //let changeInput = fromInput.replase(/\s+/g, " ").trim();
-    let array = fromInput.split(" ");
+    let changeInput = fromInput.replace(/\s+/g, " ").trim();
+    let array = changeInput.split(" ");
+
 
     let array1 = array[0];
     array1 = array1[0].toUpperCase() + array1.slice(1);

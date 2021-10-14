@@ -8,7 +8,7 @@ function onClick() {
     if (reg.test(value)) {
         let result = value.replace(reg, "***");
         resultNode.textContent = result;
-    } else {
+    } else {    
         resultNode.textContent = "Прошли!";
     }
 }
