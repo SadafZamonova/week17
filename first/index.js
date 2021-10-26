@@ -15,12 +15,12 @@ function onClick() {
     array3 = array3[0].toUpperCase() + array3.slice(1);
 
 
-    let Fam = document.querySelector(".Fam");
-    Fam.value = array1;
+    let fam = document.querySelector(".Fam");
+    fam.value = array1;
     let name = document.querySelector(".name");
     name.value = array2;
-    let Otch = document.querySelector(".Otch");
-    Otch.value = array3;
+    let otch = document.querySelector(".Otch");
+    otch.value = array3;
 }
 
 clickButton.addEventListener("click", onClick);
